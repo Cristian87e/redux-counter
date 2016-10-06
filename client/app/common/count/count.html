@@ -1,0 +1,12 @@
+<section>
+  <div class="counters">
+    <input type="number" ng-model="$ctrl.value" ng-change="$ctrl.updateValue({ value: $ctrl.value })">
+    <input type="number" ng-model="$ctrl.delay">
+  </div>
+  <div class="actions">
+    <button ng-click="$ctrl.increment({ value: $ctrl.value })">+</button>
+    <button ng-click="$ctrl.decrement({ value: $ctrl.value })">-</button>
+    <button ng-click="$ctrl.incrementIfOdd({ value: $ctrl.value })">Increment if odd</button>
+    <button ng-click="$ctrl.incrementAsync({ value: $ctrl.value, delay: $ctrl.delay })">Increment Async</button>
+  </div>
+</section>

@@ -1,0 +1,16 @@
+<section>
+  <h1>{{ vm.name }}</h1>
+  <div>
+    <textarea cols="30" rows="10" style="resize: none;"
+      ng-model="$ctrl.text" ng-change="$ctrl.updateText($ctrl.text)">
+    </textarea>
+  </div>
+  <div class="actions">
+    <button ng-click="$ctrl.save({ itFails: $ctrl.itFails })">Save</button>
+    <button ng-click="$ctrl.cancel()">Cancel</button><br>
+    <label><input type="checkbox"
+      ng-model="$ctrl.itFails">
+      Make it fail
+    </label><br>
+  </div>
+</section>

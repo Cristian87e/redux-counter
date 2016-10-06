@@ -1,0 +1,12 @@
+<navbar></navbar>
+<div>
+  <h1>{{ vm.name }}</h1>
+  <count value="vm.value" delay="vm.delay" update-value="vm.updateValue(value)"
+    increment="vm.increment(value)" decrement="vm.decrement(value)"
+    increment-if-odd="vm.incrementIfOdd(value)" increment-async="vm.incrementAsync(value, delay)">
+  </count>
+  <abm text="vm.text"
+    save="vm.trySave(itFails)" cancel="vm.cancel()">
+  </abm>
+  <list items="vm.planets"></list>
+</div>
